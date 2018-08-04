@@ -1,7 +1,9 @@
-function fazerAcao(nome) {
-    var area = document.getElementById("area");
-    var texto = prompt("Qual seu sobrenome?");
+function adicionarIngrediente() {
+    var ing = document.getElementById("ingrediente").value;
+    var listahtml = document.getElementById("lista").innerHTML;
 
-    area.innerHTML = nome+" "+texto ;
+    listahtml = listaHTML + "<li>"+ing+"</li>";
+
+    document.getElementById("lista").innerHTML = listahtml;
 
 }
